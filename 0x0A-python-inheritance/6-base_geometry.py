@@ -1,8 +1,12 @@
 #!/usr/bin/python3
+# 6-base_geometry.py
+
+"""Defines a base geometry class BaseGeometry."""
+
+
 class BaseGeometry:
-    """Class BaseGeometry for a method with public instance"""
-    pass
+    """Represent base geometry."""
 
     def area(self):
-        """method for public instance"""
+        """Not implemented."""
         raise Exception("area() is not implemented")
