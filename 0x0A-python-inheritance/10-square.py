@@ -1,14 +1,18 @@
 #!/usr/bin/python3
-"""Module"""
+# 10-square.py
 
-
-Rectangle = __import__("9-rectangle").Rectangle
+"""Defines a Rectangle subclass Square."""
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """ Square Class """
+    """Represent a square."""
+
     def __init__(self, size):
-        """Muper init for change value width an height for size"""
-        self.__size = size
+        """Initialize a new square.
+        Args:
+            size (int): The size of the new square.
+        """
         self.integer_validator("size", size)
-        super().__init__(self.__size, self.__size)
+        super().__init__(size, size)
+        self.__size = size
