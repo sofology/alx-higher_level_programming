@@ -1,6 +1,11 @@
 #!/usr/bin/node
-// class Rectangle that defines a rectangle
-exports.Rectangle = function Rectangle (w, h) {
-    this.width = w;
-    this.height = h;
+
+// script that creates a class.
+
+module.exports = class Rectangle {
+    constructor (w, h) {
+      this.width = w;
+      this.height = h;
+    }
   };
+  
