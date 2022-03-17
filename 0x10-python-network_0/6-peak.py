@@ -1,22 +1,11 @@
 #!/usr/bin/python3
-
-"""
-Peak Module
-"""
+"""This module contains a peak finding function"""
 
 
 def find_peak(list_of_integers):
-    """Function for find the best value in the list integers"""
-
-    leng_list = len(list_of_integers)
-
-    max_val = 0
-
-    if leng_list is 0:
+    """This function finds a peak in a list of unsorted integers"""
+    if list_of_integers:
+        list_of_integers.sort()
+        return list_of_integers[-1]
+    else:
         return None
-
-    for a in range(leng_list):
-        if list_of_integers[a] > max_val:
-            max_val = list_of_integers[a]
-
-    return max_val
